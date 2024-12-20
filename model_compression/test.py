@@ -20,8 +20,3 @@ print(f"Precision: {metrics['metrics/precision(B)']:.5f}")
 print(f"Recall: {metrics['metrics/recall(B)']:.5f}")
 
 
-with open('runs/my_validation/test1/metrics.txt', 'w') as f:
-    f.write(f"mAP50: {metrics['metrics/mAP50(B)']:.5f}\n")
-    f.write(f"mAP50-95: {metrics['metrics/mAP50-95(B)']:.5f}\n")
-    f.write(f"Precision: {metrics['metrics/precision(B)']:.5f}\n")
-    f.write(f"Recall: {metrics['metrics/recall(B)']:.5f}\n")
