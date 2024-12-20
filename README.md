@@ -1,16 +1,16 @@
 # This is the branch for inference and model compression
 
 ## Weights file address
-The adrress of our original modified model is model_compression\model_compression\yolov8s_GAM_smalltarget_noP5\weights\best.pt 
+The adrress of our original modified model is model_compression/model_compression/yolov8s_GAM_smalltarget_noP5/weights/best.pt 
 
-The address of our prune model is \model_compression\runs\prune\n-yolov8-nop234-gam-prune\weights\prune.pt 
+The address of our prune model is /model_compression/runs/prune/n-yolov8-nop234-gam-prune/weights/prune.pt 
 
-The address of fine-tune model after pruning is \model_compression\runs\prune\n-yolov8-nop234-gam-finetune2\weights\best.pt
+The address of fine-tune model after pruning is /model_compression/runs/prune/n-yolov8-nop234-gam-finetune2/weights/best.pt
 
 ## Validation
 To do the validation for each model, you need to modify val.py by adding weight file address to class YOLO
 ```bash
-model = YOLO('/mnt/workspace/NYU-CV-Fall2024-Project/model_compression/runs/prune/n-yolov8-nop234-gam-finetune2/weights/best.pt') #absolute path
+model = YOLO('/mnt/workspace/model_compression/runs/prune/n-yolov8-nop234-gam-finetune2/weights/best.pt') #absolute path
 ```
 and add dataset yaml file
 ```bash
@@ -26,7 +26,7 @@ To do prune and fine-tune for each model, you need to modify compress.py for the
 ```bash
  param_dict = {
         # origin
-        'model': '/mnt/workspace/NYU-CV-Fall2024-Project/model_compression/yolov8s_GAM_smalltarget_noP5/weights/best.pt',
+        'model': '/mnt/workspace/model_compression/yolov8s_GAM_smalltarget_noP5/weights/best.pt',
         'data':'/mnt/workspace/model_compression/ultralytics/cfg/datasets/TT100K.yaml',
         'imgsz': 640,
         'epochs': 100,
@@ -61,10 +61,10 @@ We do quantization after pruning. For the quantization, my tensorrt version is 8
  def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', type=str, 
-                      default='/mnt/workspace/NYU-CV-Fall2024-Project/yolov10/runs/prune/n-yolov8-nop234-gam-finetune2/weights/best.pt',
+                      default='/mnt/workspace/model_compression/runs/prune/n-yolov8-nop234-gam-finetune2/weights/best.pt',
                       help='original path')
     parser.add_argument('--data', type=str,
-                      default="/mnt/workspace/yolov10/ultralytics/cfg/datasets/TT100K.yaml",
+                      default="/mnt/workspace/model_compression/ultralytics/cfg/datasets/TT100K.yaml",
                       help='dataset path')
     parser.add_argument('--batch', type=int, default=8, help='batch size')
     parser.add_argument('--workspace', type=int, default=8, help='TensorRT workspace size in GB')
