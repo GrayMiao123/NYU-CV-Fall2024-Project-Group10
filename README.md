@@ -22,7 +22,7 @@ python val.py
 ```
 
 ## Prune and fine tune
-To do prune and fine tune for each model, you need to modify compress.py for the first two parameters of param_dict
+To do prune and fine-tune for each model, you need to modify compress.py for the first two parameters of param_dict
 ```bash
  param_dict = {
         # origin
