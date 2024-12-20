@@ -14,7 +14,7 @@ model = YOLO('/mnt/workspace/NYU-CV-Fall2024-Project/model_compression/runs/prun
 ```
 and add dataset yaml file
 ```bash
- data="/mnt/workspace/yolov10/ultralytics/cfg/datasets/TT100K.yaml", #absolute path
+ data="/mnt/workspace/model_compression/ultralytics/cfg/datasets/TT100K.yaml", #absolute path
 ```
 Then run
 ```bash
@@ -26,8 +26,8 @@ To do prune and fine-tune for each model, you need to modify compress.py for the
 ```bash
  param_dict = {
         # origin
-        'model': '/mnt/workspace/NYU-CV-Fall2024-Project/yolov10/yolov8s_GAM_smalltarget_noP5/weights/best.pt',
-        'data':'/mnt/workspace/yolov10/ultralytics/cfg/datasets/TT100K.yaml',
+        'model': '/mnt/workspace/NYU-CV-Fall2024-Project/model_compression/yolov8s_GAM_smalltarget_noP5/weights/best.pt',
+        'data':'/mnt/workspace/model_compression/ultralytics/cfg/datasets/TT100K.yaml',
         'imgsz': 640,
         'epochs': 100,
         'batch': 16,
