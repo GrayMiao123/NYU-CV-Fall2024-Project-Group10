@@ -1,1 +1,1 @@
-# NYU-CV-Fall2024-Project--Group10
+# This is the branch for model compression
