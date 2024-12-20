@@ -50,4 +50,29 @@ To do prune and fine tune for each model, you need to modify compress.py for the
         'sl_model': None,
     }, #absolute path
 ```
+Then run
+```bash
+python compress.py
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
