@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-model = YOLO('/mnt/workspace/NYU-CV-Fall2024-Project/yolov10/runs/prune/n-yolov8-nop234-gam-finetune2/weights/best.pt')
+model = YOLO('/mnt/workspace/NYU-CV-Fall2024-Project/model_compression/runs/prune/n-yolov8-nop234-gam-finetune2/weights/best.pt')
 
 # Validate the model
 results = model.val(
