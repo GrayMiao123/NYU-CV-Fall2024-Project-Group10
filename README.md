@@ -55,6 +55,28 @@ Then run
 python compress.py
 ```
 
+## int8 Quantization
+We do quantization after pruning. For the quantization, my tensorrt version is 8.6.16 and my cuda version is 12.1. To quantization, you need to add the weight file address after fine-tune and data yaml file address in quantize.py
+```bash
+ def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--model', type=str, 
+                      default='/mnt/workspace/NYU-CV-Fall2024-Project/yolov10/runs/prune/n-yolov8-nop234-gam-finetune2/weights/best.pt',
+                      help='original path')
+    parser.add_argument('--data', type=str,
+                      default="/mnt/workspace/yolov10/ultralytics/cfg/datasets/TT100K.yaml",
+                      help='dataset path')
+    parser.add_argument('--batch', type=int, default=8, help='batch size')
+    parser.add_argument('--workspace', type=int, default=8, help='TensorRT workspace size in GB')
+    return parser.parse_args()
+
+```
+Then run
+```bash
+ python quantize.py
+
+```
+
 
 
 
