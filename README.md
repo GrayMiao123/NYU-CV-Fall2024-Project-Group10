@@ -1,6 +1,25 @@
 # This is the branch for inference and model compression
 
 ## Weights file path
+'''
+model_compression/
+│
+├── model_compression/
+│   └── yolov8s_GAM_smalltarget_noP5/
+│       └── weights/
+│           └── best.pt
+│
+└── runs/
+    └── prune/
+        ├── n-yolov8-nop234-gam-prune/
+        │   └── weights/
+        │       └── prune.pt
+        │
+        └── n-yolov8-nop234-gam-finetune2/
+            └── weights/
+                └── best.pt
+'''
+
 The path of our original modified model is model_compression/model_compression/yolov8s_GAM_smalltarget_noP5/weights/best.pt 
 
 The path of our prune model is /model_compression/runs/prune/n-yolov8-nop234-gam-prune/weights/prune.pt 
@@ -20,22 +39,6 @@ Then run
 ```bash
 python val.py
 ```
-model_compression/
-│
-├── model_compression/
-│   └── yolov8s_GAM_smalltarget_noP5/
-│       └── weights/
-│           └── best.pt
-│
-└── runs/
-    └── prune/
-        ├── n-yolov8-nop234-gam-prune/
-        │   └── weights/
-        │       └── prune.pt
-        │
-        └── n-yolov8-nop234-gam-finetune2/
-            └── weights/
-                └── best.pt
 
 ## Prune and fine tune
 To do prune and fine-tune for each model, you need to modify compress.py for the first two parameters of param_dict
