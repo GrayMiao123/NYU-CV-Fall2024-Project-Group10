@@ -10,14 +10,21 @@ model_compression/
 │           └── best.pt
 │
 └── runs/
-    └── prune/
-        ├── n-yolov8-nop234-gam-prune/
-        │   └── weights/
-        │       └── prune.pt
-        │
-        └── n-yolov8-nop234-gam-finetune2/
-            └── weights/
-                └── best.pt
+│    └── prune/
+│        ├── n-yolov8-nop234-gam-prune/
+│        │   └── weights/
+│        │       └── prune.pt
+│        │
+│        └── n-yolov8-nop234-gam-finetune2/
+│            └── weights/
+│                └── best.pt
+│
+├── val.py
+|
+├── compress.py
+|
+└── quantization.py
+
 ```
 
 The path of our original modified model is model_compression/model_compression/yolov8s_GAM_smalltarget_noP5/weights/best.pt 
