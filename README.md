@@ -1,4 +1,4 @@
-# This is the branch for inference and model compression
+# For inference and model compression
 
 ## Weights file path
 ```
