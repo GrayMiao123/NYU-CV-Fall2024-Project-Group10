@@ -4,8 +4,7 @@
 ```
 model_compression/
 │
-├── model_compression/
-│   └── yolov8s_GAM_smalltarget_noP5/
+└── yolov8s_GAM_smalltarget_noP5/
 │       └── weights/
 │           └── best.pt
 │
