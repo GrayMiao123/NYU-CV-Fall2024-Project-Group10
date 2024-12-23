@@ -23,7 +23,7 @@ model_compression/
 |
 ├── compress.py
 |
-└── quantization.py
+└── quantize.py
 
 ```
 
