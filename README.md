@@ -54,7 +54,7 @@ The path of our prune model is /model_compression/runs/prune/n-yolov8-nop234-gam
 
 The path of fine-tune model after pruning is /model_compression/runs/prune/n-yolov8-nop234-gam-finetune2/weights/best.pt
 
-## Validation
+## 📉Validation
 To validate each model, you need to modify val.py by adding the weight file path to class YOLO
 ```bash
 model = YOLO('/mnt/workspace/model_compression/runs/prune/n-yolov8-nop234-gam-finetune2/weights/best.pt') #absolute path
@@ -102,7 +102,7 @@ Then run
 python compress.py
 ```
 
-## int8 Quantization
+## 🎯int8 Quantization
 We do quantization after pruning. For the quantization, my tensorrt version is 8.6.16 and my cuda version is 12.1. To quantization, you need to add the weight file path after fine-tuning and data yaml file path in quantize.py
 ```bash
  def parse_args():
