@@ -22,7 +22,7 @@ Due to the large size of the original dataset, we recommend the [Kaggle version]
 ```
 
 
-##🔍 Weights file path
+## 🔍Weights file path
 ```
 model_compression/
 │
