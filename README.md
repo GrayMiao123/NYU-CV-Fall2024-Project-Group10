@@ -1,6 +1,8 @@
 
 
-# Inference and model compression
+# Validation and model compression
+##  📚Video
+This the video posted in youtube [https://www.youtube.com/watch?v=ox1loJ9JUdI]
 ## 📝 My experiment environment
 python: 3.10.14
 
