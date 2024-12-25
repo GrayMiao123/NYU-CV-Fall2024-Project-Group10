@@ -1,4 +1,26 @@
-# For inference and model compression
+
+
+# Inference and model compression
+## 🗃️ Dataset
+### Tsinghua-Tencent-100K (TT100K)
+Official dataset: [TT100K Homepage](https://cg.cs.tsinghua.edu.cn/traffic-sign/)
+
+Due to the large size of the original dataset, we recommend the [Kaggle version](https://www.kaggle.com/datasets/braunge/tt100k?select=mydata) for this project.
+
+### Dataset Structure
+```
+📂 TT100K
+├── 📂 image
+│   ├── 📂 train (20.6K images)
+│   └── 📂 val (3,627 images)
+├── 📂 labels
+│   ├── 📂 train
+│   └── 📂 val
+└── 📄 config files
+    ├── YOLOv5.yaml
+    └── YOLOv8.yaml
+```
+
 
 ## Weights file path
 ```
