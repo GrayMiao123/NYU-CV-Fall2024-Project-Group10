@@ -22,7 +22,7 @@ Due to the large size of the original dataset, we recommend the [Kaggle version]
 ```
 
 
-## Weights file path
+##🔍 Weights file path
 ```
 model_compression/
 │
@@ -68,7 +68,7 @@ Then run
 python val.py
 ```
 
-## Prune and fine-tune
+## 🚀Prune and fine-tune
 To prune and fine-tune for each model, you need to modify compress.py for the first two parameters of param_dict
 ```bash
  param_dict = {
