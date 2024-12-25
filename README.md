@@ -5,7 +5,7 @@
 ### Tsinghua-Tencent-100K (TT100K)
 Official dataset: [TT100K Homepage](https://cg.cs.tsinghua.edu.cn/traffic-sign/)
 
-Due to the large size of the original dataset, we recommend the [Kaggle version](https://www.kaggle.com/datasets/braunge/tt100k?select=mydata) for this project.
+Due to the large size of the original dataset, we recommend the [Kaggle version](https://www.kaggle.com/datasets/braunge/tt100k?select=mydata).
 
 ### Dataset Structure
 ```
