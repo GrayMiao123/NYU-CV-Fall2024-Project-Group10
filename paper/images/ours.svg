@@ -1,0 +1,292 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="#ffffff"/>
+  
+  <!-- Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- Layer 0: Conv -->
+  <rect x="50" y="50" width="220" height="70" rx="5" fill="#a8d5ff" stroke="#333" stroke-width="2"/>
+  <text x="60" y="75" font-size="14" fill="#666">Layer 0</text>
+  <text x="160" y="95" text-anchor="middle" font-size="16" font-weight="bold">Conv</text>
+  <text x="60" y="110" font-size="14">in: 3</text>
+  <text x="260" y="110" font-size="14" text-anchor="end">out: 32</text>
+
+  <!-- Layer 1: GAM -->
+  <rect x="50" y="140" width="220" height="70" rx="5" fill="#ffd700" stroke="#333" stroke-width="2"/>
+  <text x="60" y="165" font-size="14" fill="#666">Layer 1</text>
+  <text x="160" y="185" text-anchor="middle" font-size="16" font-weight="bold">GAM</text>
+  <text x="60" y="200" font-size="14">in: 32</text>
+  <text x="260" y="200" font-size="14" text-anchor="end">out: 32</text>
+
+  <!-- Layer 2: Conv -->
+  <rect x="50" y="230" width="220" height="70" rx="5" fill="#a8d5ff" stroke="#333" stroke-width="2"/>
+  <text x="60" y="255" font-size="14" fill="#666">Layer 2</text>
+  <text x="160" y="275" text-anchor="middle" font-size="16" font-weight="bold">Conv</text>
+  <text x="60" y="290" font-size="14">in: 32</text>
+  <text x="260" y="290" font-size="14" text-anchor="end">out: 64</text>
+
+  <!-- Layer 3: C2f -->
+  <rect x="50" y="320" width="220" height="70" rx="5" fill="#ffe4a8" stroke="#333" stroke-width="2"/>
+  <text x="60" y="345" font-size="14" fill="#666">Layer 3</text>
+  <text x="160" y="365" text-anchor="middle" font-size="16" font-weight="bold">C2f</text>
+  <text x="60" y="380" font-size="14">in: 64</text>
+  <text x="260" y="380" font-size="14" text-anchor="end">out: 64</text>
+
+  <!-- Layer 4: Conv -->
+  <rect x="50" y="410" width="220" height="70" rx="5" fill="#a8d5ff" stroke="#333" stroke-width="2"/>
+  <text x="60" y="435" font-size="14" fill="#666">Layer 4</text>
+  <text x="160" y="455" text-anchor="middle" font-size="16" font-weight="bold">Conv</text>
+  <text x="60" y="470" font-size="14">in: 64</text>
+  <text x="260" y="470" font-size="14" text-anchor="end">out: 128</text>
+
+  <!-- Layer 5: C2f -->
+  <rect x="50" y="500" width="220" height="70" rx="5" fill="#ffe4a8" stroke="#333" stroke-width="2"/>
+  <text x="60" y="525" font-size="14" fill="#666">Layer 5</text>
+  <text x="160" y="545" text-anchor="middle" font-size="16" font-weight="bold">C2f</text>
+  <text x="60" y="560" font-size="14">in: 128</text>
+  <text x="260" y="560" font-size="14" text-anchor="end">out: 128</text>
+
+  <!-- Layer 6: Conv -->
+  <rect x="50" y="590" width="220" height="70" rx="5" fill="#a8d5ff" stroke="#333" stroke-width="2"/>
+  <text x="60" y="615" font-size="14" fill="#666">Layer 6</text>
+  <text x="160" y="635" text-anchor="middle" font-size="16" font-weight="bold">Conv</text>
+  <text x="60" y="650" font-size="14">in: 128</text>
+  <text x="260" y="650" font-size="14" text-anchor="end">out: 256</text>
+
+  <!-- Layer 7: C2f -->
+  <rect x="50" y="680" width="220" height="70" rx="5" fill="#ffe4a8" stroke="#333" stroke-width="2"/>
+  <text x="60" y="705" font-size="14" fill="#666">Layer 7</text>
+  <text x="160" y="725" text-anchor="middle" font-size="16" font-weight="bold">C2f</text>
+  <text x="60" y="740" font-size="14">in: 256</text>
+  <text x="260" y="740" font-size="14" text-anchor="end">out: 256</text>
+
+  <!-- Layer 8: GAM -->
+  <rect x="50" y="770" width="220" height="70" rx="5" fill="#ffd700" stroke="#333" stroke-width="2"/>
+  <text x="60" y="795" font-size="14" fill="#666">Layer 8</text>
+  <text x="160" y="815" text-anchor="middle" font-size="16" font-weight="bold">GAM</text>
+  <text x="60" y="830" font-size="14">in: 256</text>
+  <text x="260" y="830" font-size="14" text-anchor="end">out: 256</text>
+
+  <!-- Layer 9: SPPF -->
+  <rect x="50" y="860" width="220" height="70" rx="5" fill="#87ceeb" stroke="#333" stroke-width="2"/>
+  <text x="60" y="885" font-size="14" fill="#666">Layer 9</text>
+  <text x="160" y="905" text-anchor="middle" font-size="16" font-weight="bold">SPPF</text>
+  <text x="60" y="920" font-size="14">in: 256</text>
+  <text x="260" y="920" font-size="14" text-anchor="end">out: 256</text>
+
+
+
+
+  <!-- FPN Path (Left Column) -->
+  <!-- Layer 10: Upsample -->
+  <rect x="400" y="860" width="220" height="70" rx="5" fill="#98fb98" stroke="#333" stroke-width="2"/>
+  <text x="410" y="885" font-size="14" fill="#666">Layer 10</text>
+  <text x="510" y="905" text-anchor="middle" font-size="16" font-weight="bold">Upsample</text>
+  <text x="410" y="920" font-size="14">in: 256</text>
+  <text x="610" y="920" font-size="14" text-anchor="end">out: 256</text>
+
+  <!-- Layer 11: Concat -->
+  <rect x="400" y="410" width="220" height="70" rx="5" fill="#ffd700" stroke="#333" stroke-width="2"/>
+  <text x="410" y="435" font-size="14" fill="#666">Layer 11</text>
+  <text x="510" y="455" text-anchor="middle" font-size="16" font-weight="bold">Concat</text>
+  <text x="410" y="470" font-size="14">in: [256,128]</text>
+  <text x="610" y="470" font-size="14" text-anchor="end">out: 384</text>
+
+  <!-- Layer 12: C2f -->
+  <rect x="400" y="320" width="220" height="70" rx="5" fill="#ffe4a8" stroke="#333" stroke-width="2"/>
+  <text x="410" y="345" font-size="14" fill="#666">Layer 12</text>
+  <text x="510" y="365" text-anchor="middle" font-size="16" font-weight="bold">C2f</text>
+  <text x="410" y="380" font-size="14">in: 384</text>
+  <text x="610" y="380" font-size="14" text-anchor="end">out: 128</text>
+
+  <!-- Layer 13: Upsample -->
+  <rect x="400" y="230" width="220" height="70" rx="5" fill="#98fb98" stroke="#333" stroke-width="2"/>
+  <text x="410" y="255" font-size="14" fill="#666">Layer 13</text>
+  <text x="510" y="275" text-anchor="middle" font-size="16" font-weight="bold">Upsample</text>
+  <text x="410" y="290" font-size="14">in: 128</text>
+  <text x="610" y="290" font-size="14" text-anchor="end">out: 128</text>
+
+  <!-- PAN Path (Right Column) -->
+  <!-- Layer 14: Concat -->
+  <rect x="800" y="230" width="220" height="70" rx="5" fill="#ffd700" stroke="#333" stroke-width="2"/>
+  <text x="810" y="255" font-size="14" fill="#666">Layer 14</text>
+  <text x="910" y="275" text-anchor="middle" font-size="16" font-weight="bold">Concat</text>
+  <text x="810" y="290" font-size="14">in: [128,64]</text>
+  <text x="1010" y="290" font-size="14" text-anchor="end">out: 192</text>
+
+  <!-- Layer 15: C2f -->
+  <rect x="800" y="320" width="220" height="70" rx="5" fill="#ffe4a8" stroke="#333" stroke-width="2"/>
+  <text x="810" y="345" font-size="14" fill="#666">Layer 15</text>
+  <text x="910" y="365" text-anchor="middle" font-size="16" font-weight="bold">C2f</text>
+  <text x="810" y="380" font-size="14">in: 192</text>
+  <text x="1010" y="380" font-size="14" text-anchor="end">out: 64</text>
+
+  <!-- Layer 16: Conv -->
+  <rect x="800" y="410" width="220" height="70" rx="5" fill="#a8d5ff" stroke="#333" stroke-width="2"/>
+  <text x="810" y="435" font-size="14" fill="#666">Layer 16</text>
+  <text x="910" y="455" text-anchor="middle" font-size="16" font-weight="bold">Conv</text>
+  <text x="810" y="470" font-size="14">in: 64</text>
+  <text x="1010" y="470" font-size="14" text-anchor="end">out: 128</text>
+
+  <!-- Layer 17: Concat -->
+  <rect x="800" y="500" width="220" height="70" rx="5" fill="#ffd700" stroke="#333" stroke-width="2"/>
+  <text x="810" y="525" font-size="14" fill="#666">Layer 17</text>
+  <text x="910" y="545" text-anchor="middle" font-size="16" font-weight="bold">Concat</text>
+  <text x="810" y="560" font-size="14">in: [128,384]</text>
+  <text x="1010" y="560" font-size="14" text-anchor="end">out: 512</text>
+
+  <!-- Layer 18: C2f -->
+  <rect x="800" y="590" width="220" height="70" rx="5" fill="#ffe4a8" stroke="#333" stroke-width="2"/>
+  <text x="810" y="615" font-size="14" fill="#666">Layer 18</text>
+  <text x="910" y="635" text-anchor="middle" font-size="16" font-weight="bold">C2f</text>
+  <text x="810" y="650" font-size="14">in: 512</text>
+  <text x="1010" y="650" font-size="14" text-anchor="end">out: 128</text>
+
+  <!-- Layer 19: Conv -->
+  <rect x="800" y="680" width="220" height="70" rx="5" fill="#a8d5ff" stroke="#333" stroke-width="2"/>
+  <text x="810" y="705" font-size="14" fill="#666">Layer 19</text>
+  <text x="910" y="725" text-anchor="middle" font-size="16" font-weight="bold">Conv</text>
+  <text x="810" y="740" font-size="14">in: 128</text>
+  <text x="1010" y="740" font-size="14" text-anchor="end">out: 256</text>
+
+  <!-- Layer 20: Concat -->
+  <rect x="800" y="770" width="220" height="70" rx="5" fill="#ffd700" stroke="#333" stroke-width="2"/>
+  <text x="810" y="795" font-size="14" fill="#666">Layer 20</text>
+  <text x="910" y="815" text-anchor="middle" font-size="16" font-weight="bold">Concat</text>
+  <text x="810" y="830" font-size="14">in: [256,256]</text>
+  <text x="1010" y="830" font-size="14" text-anchor="end">out: 512</text>
+
+  <!-- Layer 21: C2f -->
+  <rect x="800" y="860" width="220" height="70" rx="5" fill="#ffe4a8" stroke="#333" stroke-width="2"/>
+  <text x="810" y="885" font-size="14" fill="#666">Layer 21</text>
+  <text x="910" y="905" text-anchor="middle" font-size="16" font-weight="bold">C2f</text>
+  <text x="810" y="920" font-size="14">in: 512</text>
+  <text x="1010" y="920" font-size="14" text-anchor="end">out: 256</text>
+
+
+
+
+  
+  <!-- Detection Heads -->
+  <!-- Layer 22 (P3): Detect -->
+  <rect x="1200" y="230" width="220" height="70" rx="5" fill="#90ee90" stroke="#333" stroke-width="2"/>
+  <text x="1210" y="255" font-size="14" fill="#666">Layer 22 (P2)</text>
+  <text x="1310" y="275" text-anchor="middle" font-size="16" font-weight="bold">Detect</text>
+  <text x="1210" y="290" font-size="14">in: 64</text>
+  <text x="1410" y="290" font-size="14" text-anchor="end">out: 192</text>
+
+  <!-- Layer 22 (P4): Detect -->
+  <rect x="1200" y="410" width="220" height="70" rx="5" fill="#90ee90" stroke="#333" stroke-width="2"/>
+  <text x="1210" y="435" font-size="14" fill="#666">Layer 22 (P3)</text>
+  <text x="1310" y="455" text-anchor="middle" font-size="16" font-weight="bold">Detect</text>
+  <text x="1210" y="470" font-size="14">in: 128</text>
+  <text x="1410" y="470" font-size="14" text-anchor="end">out: 512</text>
+
+  <!-- Layer 22 (P5): Detect -->
+  <rect x="1200" y="860" width="220" height="70" rx="5" fill="#90ee90" stroke="#333" stroke-width="2"/>
+  <text x="1210" y="885" font-size="14" fill="#666">Layer 22 (P4)</text>
+  <text x="1310" y="905" text-anchor="middle" font-size="16" font-weight="bold">Detect</text>
+  <text x="1210" y="920" font-size="14">in: 256</text>
+  <text x="1410" y="920" font-size="14" text-anchor="end">out: 512</text>
+
+  
+  <!-- Backbone垂直连接 -->
+  <path d="M160 120 L160 140" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M160 210 L160 230" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M160 300 L160 320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M160 390 L160 410" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M160 480 L160 500" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M160 570 L160 590" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M160 660 L160 680" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M160 750 L160 770" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M160 840 L160 860" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Backbone到FPN的跳跃连接 -->
+  <!-- Layer 2 到 Layer 14 -->
+  <path d="M270 265 L400 265" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 4 到 Layer 11 -->
+  <path d="M270 445 L400 445" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  
+  <!-- Layer 9 到 Layer 10 -->
+  <path d="M270 895 L400 895" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- FPN下采样路径 -->
+  <!-- P4到P3的下采样 -->
+
+  
+
+
+  <!-- PAN上采样路径 -->
+  <!-- P2到P3 -->
+
+  <path d="M910 480 L910 500" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- P3到P4 -->
+  <path d="M910 570 L910 590" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M910 660 L910 680" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M910 750 L910 770" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M910 840 L910 860" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- FPN到PAN的横向连接 -->
+  <!-- P2层级 -->
+  <path d="M620 265 L700 265" stroke="#333" stroke-width="2"/>
+  <path d="M700 265 L800 265" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- P3层级 -->
+  <path d="M620 445 L700 445" stroke="#333" stroke-width="2"/>
+  <path d="M700 445 L800 445" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- P4层级 -->
+  <path d="M620 895 L700 895" stroke="#333" stroke-width="2"/>
+  <path d="M700 895 L800 895" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- PAN到Detection heads的连接 -->
+  <!-- P2检测头连接 -->
+  <path d="M1020 265 L1100 265" stroke="#333" stroke-width="2"/>
+  <path d="M1100 265 L1200 265" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- P3检测头连接 -->
+  <path d="M1020 445 L1100 445" stroke="#333" stroke-width="2"/>
+  <path d="M1100 445 L1200 445" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- P4检测头连接 -->
+  <path d="M1020 895 L1100 895" stroke="#333" stroke-width="2"/>
+  <path d="M1100 895 L1200 895" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 特征融合的垂直连接 -->
+  <path d="M700 265 L700 445" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M700 445 L700 895" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+<!-- 添加FPN路径的箭头 -->
+  <!-- Layer 10 -> Layer 11 (下采样路径) -->
+  <path d="M510 860 L510 700" stroke="#333" stroke-width="2"/>
+  <path d="M510 700 L510 480" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 11 -> Layer 12 -->
+  <path d="M510 410 L510 390" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 12 -> Layer 13 -->
+  <path d="M510 320 L510 300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 添加PAN路径的箭头 -->
+  <!-- Layer 14 -> Layer 15 -->
+  <path d="M910 300 L910 320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 15 -> Layer 16 -->
+  <path d="M910 390 L910 410" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+
+
+
+
+
+
+
+</svg>

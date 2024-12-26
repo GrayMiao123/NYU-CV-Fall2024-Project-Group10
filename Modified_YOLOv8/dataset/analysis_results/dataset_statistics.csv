@@ -1,0 +1,10 @@
+Metric,Value
+Total_Images,24052.0
+Train_Images,20454.0
+Val_Images,3598.0
+Total_Objects,74008.0
+Train_Objects,63185.0
+Val_Objects,10823.0
+Number_of_Categories,50.0
+Train/Val_Ratio,5.838030121038529
+Objects_per_Image,3.08
